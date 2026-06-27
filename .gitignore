@@ -18,9 +18,6 @@ env/
 data/raw/*
 data/processed/*
 data/index/*
-!data/raw/.gitkeep
-!data/processed/.gitkeep
-!data/index/.gitkeep
 
 # Model/runtime artifacts
 *.pkl
