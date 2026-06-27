@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment files
+.env
+.env.*
+
+# Local data and generated artifacts
+data/raw/*
+data/processed/*
+data/index/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/index/.gitkeep
+
+# Model/runtime artifacts
+*.pkl
+*.pt
+*.pth
+*.ckpt
+*.onnx
+outputs/
+logs/
+reports/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
