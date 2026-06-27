@@ -1,0 +1,27 @@
+# GovRAG Copilot — core dependencies (no API keys required)
+# All dependencies are open-source and free to use.
+
+# --- Core (always required) ---------------------------------------
+numpy>=1.26
+scikit-learn>=1.4          # TF-IDF vectorizer
+pypdf>=5.0                 # PDF text extraction (fallback for real PDFs)
+
+# --- Demo UI ------------------------------------------------------
+gradio>=4.40               # Bilingual web UI
+
+# --- Tests --------------------------------------------------------
+pytest>=8.0
+
+# --- Optional LLM backend #1: Hugging Face Transformers -----------
+# Uncomment to use open-weight models locally (no API key, no network
+# after first download).  ~5GB disk for Qwen2.5-1.5B; ~16GB for 7B.
+#
+# transformers>=4.45
+# torch>=2.2
+# accelerate>=0.30
+# sentencepiece>=0.2
+
+# --- Optional LLM backend #2: Ollama ------------------------------
+# Ollama is NOT installed via pip. Install it from https://ollama.com,
+# then `ollama pull qwen2.5:7b-instruct`. No Python package needed —
+# the GovRAG client speaks to Ollama's HTTP API using only the stdlib.
