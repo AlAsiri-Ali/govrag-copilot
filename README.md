@@ -152,7 +152,7 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 ### Linux / macOS
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/govrag-copilot.git
+https://github.com/AlAsiri-Ali/govrag-copilot.git
 cd govrag-copilot
 python3 -m venv .venv
 source .venv/bin/activate
